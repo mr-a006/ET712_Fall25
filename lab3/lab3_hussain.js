@@ -129,5 +129,9 @@ while(true){
         console.log(`Welcome to your account`)
         break
     }
-
+    // attempt_counter reaches to zero
+    if(){
+        console.log("ACCOUNT IS LOCKED")
+        break
+    }
 }
