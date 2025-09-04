@@ -107,4 +107,27 @@ while(true){
             console.log(`Thank you for visiting QCC bank!`)
             break
     }
+
+
+
+}
+console.log("----- EXCERCISE A -----")
+
+
+console.log("----- EXCERCISE B -----")
+let PIN = 1234
+let attempt_counter = 3
+while(true){
+    // collect a pin number
+    let user_pin = parseInt(prompt("Enter a pin number"))
+    //pin doesn't match
+    if(){
+        user_pin = parseInt(prompt("Enter a pin number"))
+        attempt_counter --
+    }
+    else{
+        console.log(`Welcome to your account`)
+        break
+    }
+
 }
