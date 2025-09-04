@@ -114,18 +114,25 @@ if (check_username){
 }
 else{
     console.log(`${user_input} is a NUMBER`)
-    if // check if the number is positive
+    let number = parseFloat(user_input); // Convert user input to a number
 
-    else if // check if the number is negative
-
-    else if // check if the number is zero
-
-    else // error
+    if (number > 0) {
+        console.log(`${user_input} is a POSITIVE number`);
+    } else if (number < 0) {
+        console.log(`${user_input} is a NEGATIVE number`);
+    } else if (number === 0) {
+        console.log(`${user_input} is ZERO`);
+    } else {
+        console.log("Error: Invalid number");
+    }
 
 }
 console.log("\n------ EXERCISE 2 --------")
 let colors = ["red", "green", "orange", "olive", "magenta"]
 let user_color = prompt("Enter a color")
-// use indexOf method to check if the user_color exists in array colors
 
-// if-else to print the result
+if (colors.indexOf(user_color) !== -1) {
+    console.log(`${user_color} exists in the colors array!`);
+} else {
+    console.log(`${user_color} does NOT exist in the colors array.`);
+}
