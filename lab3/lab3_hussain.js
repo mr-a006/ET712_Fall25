@@ -112,6 +112,20 @@ while(true){
 
 }
 console.log("----- EXCERCISE A -----")
+let num = [-3, 10, 0, 8, -9, 5, -2, 8, 6, -1]
+let numNeg = 0
+let numPos = 0
+
+for(let i = 0; i < num.length; i++){
+    if(num[i] < 0){
+        numNeg += num[i]
+    } else if(num[i] > 0){
+        numPos += num[i]
+    }
+}
+
+console.log("Sum of all negative numbers =", numNeg)
+console.log("Sum of all positive numbers =", numPos)
 
 
 console.log("----- EXCERCISE B -----")
@@ -121,7 +135,7 @@ while(true){
     // collect a pin number
     let user_pin = parseInt(prompt("Enter a pin number"))
     //pin doesn't match
-    if(){
+    if(user_pin < PIN){
         user_pin = parseInt(prompt("Enter a pin number"))
         attempt_counter --
     }
@@ -130,7 +144,7 @@ while(true){
         break
     }
     // attempt_counter reaches to zero
-    if(){
+    if(attempt_counter === 0){
         console.log("ACCOUNT IS LOCKED")
         break
     }
