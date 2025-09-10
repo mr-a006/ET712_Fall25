@@ -59,3 +59,27 @@ function checkTemperature(temperature){
     }
 }
 //EXERCISE
+function checkName(){
+    let name;
+
+    // prompt for a name
+    while(true){
+        name = prompt("Enter your name: ");
+    
+    //if the user cancels or leaves input blank
+    if (name === null || name.trim() === ""){
+        alert("You forgot to enter a name. Enter a name again:");
+    }
+
+    // if the user enters a number
+    else if (!isNaN(name)){
+        alert(`${name} is invalid! Enter a name again: `)
+    }
+
+    // if the input is valid (name)
+    else{
+        console.log(`Welcome ${name.toUpperCase()} to the class!`);
+        break;
+    }
+    }
+}
