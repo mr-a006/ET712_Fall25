@@ -25,7 +25,7 @@ function rand_number(x){
 // EXAMPLE 4: spread syntax
 numbers = [2, 0, -10, 5, 8, -9]
 let max_number = Math.max(...numbers)
-console.log(`\n---- Example 3: spread----`)
+console.log(`\n---- Example 4: spread ----`)
 console.log(`The maximum number is = ${max_number}`)
 
 // create an object 'car'
@@ -88,3 +88,38 @@ function yell(message = "") {
         console.log('Please pass a string next time!')
     }
 }
+
+// EXERCISE 1
+
+console.log(`\n---- EXERCISE 1 ----`)
+const mycalculator = {
+    message: "This is a calculator for square area and cube volume.",
+    side : 2,
+
+    area_square : function(){
+        return Math.pow(this.side, 2);
+    },
+    
+    volume_cube : function(){
+        return Math.pow(this.side, 3);
+    }
+};
+
+    console.log(mycalculator.message);
+    console.log("Area of square:", mycalculator.area_square());
+    console.log("Volume of cube:", mycalculator.volume_cube());
+
+// EXERCISE 2
+
+console.log(`\n---- EXERCISE 2 ----`)
+function readProperty(obj, prop) {
+    try {
+        return obj[prop];
+    } catch (error) {
+        return "Error accessing property";
+    }
+}
+
+    console.log(readProperty({ name: "Aqeel" }, "name"));
+    console.log(readProperty(null, "name"));
+    console.log(readProperty(undefined, "name"));
