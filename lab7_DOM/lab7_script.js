@@ -31,14 +31,18 @@ let btn_rectangle = document.querySelector(".btn_rectangle")
 btn_square.addEventListener("click", function(){
     shape.className = "square"
     shape.textContent = "square".toUpperCase()
+    shape.style.backgroundColor = "gold";
 } )
 
 btn_circle.addEventListener("click", function(){
     shape.className = "circle"
     shape.textContent = "circle".toUpperCase()
+    shape.style.fontSize = "2rem";
+    shape.style.backgroundColor = "green";
 } )
 
 btn_rectangle.addEventListener("click", function(){
     shape.className = "rectangle"
     shape.textContent = "rectangle".toUpperCase()
+    shape.style.backgroundColor = "gray";
 } )
