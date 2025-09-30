@@ -9,11 +9,11 @@
 <body>
     <h1>Lab 7 by Aqeel Hussain</h1>
     <h1 id="title">Accessing elements</h1>
-    <p class="descriptipn">Traditional methods to access elements: </p>
+    <p class="description">Traditional methods to access elements: </p>
     <ul class="traditionalMethods">
         <li class="method">getElementById</li>
-        <li class="method">getElementByClassName</li>
-        <li class="method">getElementTagName</li>
+        <li class="method">getElementsByClassName</li>
+        <li class="method">getElementsByTagName</li>
     </ul>
     <p class="description">Most recent methods to access elements: </p>
     <ul class="recentMethods">
@@ -27,7 +27,23 @@
         <button class="btn_circle">CIRCLE</button>
         <button class="btn_rectangle">RECTANGLE</button>
     </section>
+    <h1>Inline event</h1>
+    <button onclick="alert('You clicked')">
+        CLICK HERE
+    </button>
+    <h1>Traditional event handler</h1>
+    <button class="btnpress">SHOW THE DATE!</button>
+    <h1>Mouse events</h1>
+    <div class="circle x"></div>
+    <p class="circle_paragraph"></p>
 
+    <h1>Event Listener</h1>
+    <div class="rectangle box_color"></div>
+
+    <h1>Key event</h1>
+    <label for="username">Username: </label>
+    <input type="text" class="inputtext" id="username">
+    <p class="username_paragraph"></p>
 
     <script src="lab7_script.js"></script>
 </body>
