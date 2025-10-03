@@ -83,22 +83,39 @@ inputtext.addEventListener("keydown", function(){
 // LAB EXERCISE
 // note: use querySelector() or querySelectorAll()
 // collect elements: search for the first p with class ps1
+let ps1 = document.querySelector(".ps1");
 
-// add a mouseout event to change the text
+// add a mouseout event to change the text to "STUDENT'S FULL NAME"
+ps1.addEventListener("mouseout", function(){
+    ps1.textContent = "AQEEL HUSSAIN";
+});
 
 
 // search for the second p with class ps2
+let ps2 = document.querySelector(".ps2");
 
 
-// add a click event to the ps2 to change the
+// add a click event to the ps2 to change the font-size to 25px and color to olive when is clicked
+ps2.addEventListener("click", function(){
+    ps2.style.fontSize = "25px";
+    ps2.style.color = "olive";
+});
 
 
 // search the first div with class divs2
+let div1 = document.querySelector(".divs2");
 
 
-// add a click event to change the background
+// add a click event to change the background color to indigo
+div1.addEventListener("click", function(){
+    div1.style.backgroundColor = "indigo";
+});
 
 
 // search for the second div with class divs2
+let div2 = document.querySelector(".divs3");
 
-// add a keydown event to change the width of
+// add a keydown event to change the width of divs2 to 300px
+divs3.addEventListener("keydown", function(){
+    divs3.style.width = "300px";
+});
