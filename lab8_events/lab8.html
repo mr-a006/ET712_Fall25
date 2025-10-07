@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8 - Aqeel Hussain</title>
+    <link rel="stylesheet" href="lab8_style.css">
+</head>
+<body>
+    <h1>Aqeel Hussain</h1>
+    <h2>Lab 8, events</h2>
+    <button class="btnpressme">PRESS ME!</button>
+    <h3>Event delegation</h3>
+    <p>Click on the list to remove an item</p>
+    <ul id="list">
+        <li>Apple <span>&#x1F34E;</span></li>
+        <li>Orange <span>&#x1F34A;</span></li>
+        <li>Kiwi <span>&#x1F95D;</span></li>
+    </ul>
+
+    <h3>preventDefault() method</h3>
+    <a href="https://www.qcc.cuny.edu" class="qcclink" target="_blank">QCC link</a>
+
+    <h2>WINDOW EVENTS</h2>
+    <h3>Scroll event</h3>
+    <div id="content">
+        <h4>Scrollable content</h4>
+        <p>This content is wider than the window, allowing for horizontal scrolling.</p>
+    </div>
+
+    <button class="btnscrollby">Scroll right</button>
+
+    <h3>Photo gallery scrolling</h3>
+    <section class="maincontainer">
+        <div class="gallery-container">
+            <img class="gallery-image" src="images/image1.jpeg" alt="image1">
+            <img class="gallery-image" src="images/image2.jpeg" alt="image2">
+            <img class="gallery-image" src="images/image3.jpeg" alt="image3">
+            <img class="gallery-image" src="images/image4.jpeg" alt="image4">
+        </div>
+
+        <button class="btnright">&#x276F;</button>
+        <button class="btnleft">&#x276E;</button>
+    </section>
+    <script src="lab8_script.js"></script>
+</body>
+</html>
