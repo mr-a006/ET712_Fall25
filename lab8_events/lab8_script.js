@@ -60,3 +60,18 @@ btnright.addEventListener("click",function(){
 btnleft.addEventListener("click",function(){
     scrollGallery(-500)
 })
+
+// exercise
+let clickCount = 0
+const clickCircle = document.getElementById("clickCircle")
+const resetBtn = document.getElementById("resetBtn")
+
+clickCircle.addEventListener("click", function(){
+    clickCount++
+    clickCircle.textContent = clickCount
+})
+
+resetBtn.addEventListener("click", function(){
+    clickCount = 0
+    clickCircle.textContent = clickCount
+})
