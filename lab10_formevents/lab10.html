@@ -8,12 +8,17 @@
 </head>
 <body>
     <h1>Aqeel Hussain</h1>
-    <form class="myform">
+    <form class="myform" id="form1">
         <legend class="legend">User info</legend>
         <section class="formcontrol">
-            <label for="form_label" for="username">Enter username: </label>
-            <input type="form_input" id="username" maxlength="20" placeholder="type username...">
+            <label class="form_label" for="username">Enter username: </label>
+<input class="form_input" id="username" maxlength="20" placeholder="type username...">
             <p class="username_error_msg"></p>
+        </section>
+
+        <section class="formcontrol">
+            <label for="password" class="form_label">Enter a password</label>
+            <input type="password" id="password" class="form_input" placeholder="type your password...">
         </section>
 
         <input type="submit" value="SUBMIT" class="btnsubmit">
@@ -23,7 +28,16 @@
             <p>Welcome to the form events <span class="display_username">username</span></p>
         </div>
     </form>
-    
+
+    <form class="myform">
+        <h2>Unscramble the world!</h2>
+        <p>Shuffled word: <strong id="shuffledword"></strong></p>
+
+        <section class="formcontrol">
+            <input type="text" id="guessInput" class="form_input" placeholder="Type the correct word!...">
+            <p id="wordfeedback"></p>
+        </section>
+    </form>
 
     <script src="lab10_script.js"></script>
 </body>
