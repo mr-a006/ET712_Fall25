@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning is Fun</title>
+    <link rel="stylesheet" href="project1_style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌈 Learning is Fun! 🌈</h1>
+        <nav>
+          <ul>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#numbers">Numbers</a></li>
+            <li><a href="#animals">Animals</a></li>
+            <li><a href="#shapes">Shapes</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <!-- colors -->
+        <section id="colors" class="learning-section">
+            <h2>🎨 Learn Colors</h2>
+            <div class="color-grid">
+              <div class="color-box" data-color="Red" style="background:red;"></div>
+              <div class="color-box" data-color="Blue" style="background:blue;"></div>
+              <div class="color-box" data-color="Green" style="background:green;"></div>
+              <div class="color-box" data-color="Yellow" style="background:yellow;"></div>
+              <div class="color-box" data-color="Orange" style="background:orange;"></div>
+              <div class="color-box" data-color="Purple" style="background:purple;"></div>
+              <div class="color-box" data-color="Pink" style="background:pink;"></div>
+              <div class="color-box" data-color="Brown" style="background:brown;"></div>
+              <div class="color-box" data-color="Black" style="background:black;"></div>
+              <div class="color-box" data-color="White" style="background:white; border:1px solid #ccc;"></div>
+            </div>
+            <p id="color-name"></p>
+          </section>
+    
+        <!-- numbers -->
+        <section id="numbers" class="learning-section">
+          <h2>🔢 Learn Numbers</h2>
+          <div class="number-slider">
+            <button id="prev-num">⬅️</button>
+            <span id="current-number">1</span>
+            <button id="next-num">➡️</button>
+          </div>
+        </section>
+    
+        <!-- animals -->
+        <section id="animals" class="learning-section">
+          <h2>🐾 Learn Animals</h2>
+          <div class="animal-gallery">
+            <img src="https://placebear.com/200/200" alt="Bear" data-animal="Bear">
+            <img src="https://placekitten.com/200/200" alt="Cat" data-animal="Cat">
+            <img src="https://placedog.net/200/200" alt="Dog" data-animal="Dog">
+          </div>
+        </section>
+    
+        <!-- shapes -->
+        <section id="shapes" class="learning-section">
+          <h2>🔺 Learn Shapes</h2>
+          <div class="shape-grid">
+            <div class="shape circle" data-shape="Circle"></div>
+            <div class="shape square" data-shape="Square"></div>
+            <div class="shape triangle" data-shape="Triangle"></div>
+          </div>
+        </section>
+    
+        <!-- modal window -->
+        <div id="info-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modal-text"></p>
+          </div>
+        </div>
+      </main>
+    
+      <footer>
+        <p>© 2025 Learning is Fun | By Aqeel Hussain | Made for Pre-K Learners</p>
+        <button id="topBtn">⬆️ Go to Top</button>
+      </footer>
+
+    <script src="project1_script.js"></script>
+</body>
+</html>
