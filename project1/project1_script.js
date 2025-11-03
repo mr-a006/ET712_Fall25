@@ -35,13 +35,3 @@ document.querySelectorAll('.shape, .animal-gallery img').forEach(item => {
 
 closeBtn.onclick = () => modal.style.display = 'none';
 window.onclick = e => { if (e.target == modal) modal.style.display = 'none'; };
-
-// go to top button
-document.getElementById('topBtn').addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-// fun greeting alert when page loads
-window.addEventListener('load', () => {
-  alert("👋 Welcome to Learning is Fun! Let's explore together!");
-});
