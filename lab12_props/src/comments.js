@@ -6,7 +6,7 @@ const User = function(props){
     return(
         <>
             <section className="card">
-                <a><img src={props.img}></img></a>
+                <a><img src={props.image}></img></a>
                 <div className="content">
                     <a className="author">Batman</a>
                 </div>
