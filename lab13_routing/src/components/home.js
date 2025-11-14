@@ -12,13 +12,15 @@ const Home = function(){
             </header>
             <main className="maincontainer">
                 <div className="cardimg">
-                    <Link>
+                    <Link to="/about">
                         <img src={aboutimg}/>
                     </Link>
 
                 </div>
                 <div className="cardimg">
-                    <img src={contactimg}/>
+                    <Link to="/contact">
+                        <img src={contactimg}/>
+                    </Link>
                 </div>
             </main>
         </>
