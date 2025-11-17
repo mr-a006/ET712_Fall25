@@ -6,25 +6,25 @@ function App(){
   const products = [
     {
       name: "Apple iPhone 15",
-      image: "https://via.placeholder.com/150",
+      image: "./images/iphone15.jpg",
       price: "$999",
       inStock: true,
     },
     {
       name: "Samsung Galaxy S23",
-      image: "https://via.placeholder.com/150",
+      image: "./images/galaxys23.jpg",
       price: "$899",
       inStock: false,
     },
     {
       name: "Sony Headphones",
-      image: "https://via.placeholder.com/150",
+      image: "./images/sonyheadphones.jpg",
       price: "$199",
       inStock: true,
     },
     {
       name: "Dell Laptop",
-      image: "https://via.placeholder.com/150",
+      image: "./images/delllaptop.jpg",
       price: "$1200",
       inStock: true,
     },
@@ -48,19 +48,19 @@ function App(){
     },
     {
       name: "Fitbit Charge 5",
-      image: "https://via.placeholder.com/150",
+      image: "./images/fitbitcharge5.jpg",
       price: "$149",
       inStock: true,
     },
     {
       name: "Google Pixel 7",
-      image: "https://via.placeholder.com/150",
+      image: "./images/pixel7.jpg",
       price: "$699",
       inStock: false,
     },
     {
       name: "Bose Speakers",
-      image: "https://via.placeholder.com/150",
+      image: "./images/bosespeakers.jpg",
       price: "$499",
       inStock: true,
     },
