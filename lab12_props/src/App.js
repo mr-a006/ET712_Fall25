@@ -22,6 +22,13 @@ function App() {
       {/** user 3 */}
       <User_feedback username ="Ronald"> <User image ={avatar3} date="01/20/2025" msg="I am heading to school"/></User_feedback>
     </section>
+
+    {/** COMMENT LIST */}
+    <section className='postcomment'>
+      <ul className='commentlist'>
+        <li>Testing</li>
+      </ul>
+    </section>
     </>
   );
 }

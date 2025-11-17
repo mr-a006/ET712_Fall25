@@ -5,8 +5,9 @@ import Modalwindow from './modalwindow'
 const User_feedback = function(props){
         // open modal window
         const openmodalwindow = ()=>{
+            document.querySelector(".modalusername").textContent = props.username
             const modalwindow = document.querySelector(".modalWindow")
-            modalwindow.computedStyleMap.display = "block"
+            modalwindow.style.display = "block"
         }
 
     return(

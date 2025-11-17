@@ -18,12 +18,22 @@ img{width: 100%; display: block;}
 }
 
 /* app.js */
-container{
+.container{
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
-
+.postcomment{
+    width: 980px;
+    background-color: rgb(240,240,240);
+    margin: 3rem auto;
+}
+.commentlist li{
+    list-style: none;
+    background-color: white;
+    padding: 1rem;
+    border: solid 1px rgb(240,240,240);
+}
 /* user_feedback.js */
 .feedbackcard{
     width: 300px;
@@ -41,7 +51,7 @@ container{
     margin: 1rem;
 }
 .feedbackcontainer:hover{
-    box-shadow: 0px 0px 5px 1px gray;
+    box-shadow: 0px 0px 10px 1px gray;
     transform: scale(1.01);
     overflow: hidden;
     border-radius: 10px;
@@ -54,7 +64,7 @@ container{
 
 /* modalwindow.js */
 .modalWindow{
-    background-color: rgba(50,50,50,0.7);
+    background-color: rgba(50,50,50,0.5);
     position: fixed;
     top: 0%; bottom: 0%; left: 0%; right: 0%;
     display: none;

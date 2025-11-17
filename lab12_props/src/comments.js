@@ -8,7 +8,6 @@ const User = function(props){
             <section className="card">
                 <a><img src={props.image}></img></a>
                 <div className="content">
-                    <a className="author">Batman</a>
                 </div>
                 <div>
                     <p>Posted on <span className="date">{props.date}</span></p>
