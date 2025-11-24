@@ -54,6 +54,19 @@ function App(){
           </div>
 
           <div className='formgroup'>
+            <label for="password">Enter password: </label>
+            <input
+              type='text'
+              id='password'
+              className='inputstyle'
+              name='password'
+              placeholder='Type your password...'
+              value={inputs.password}
+              onChange={handle_changes}
+            />
+          </div>
+
+          <div className='formgroup'>
             <label for="age">Enter your age: </label>
             <input
               type='number'
@@ -99,6 +112,7 @@ function App(){
       <p className='printresult'>Age = {inputs.age}</p>
       <p className='printresult'>Gender = {myGender}</p>
       <p className='printresult'>Comments = {textcomment}</p>
+      <p className='printresult'>Password = {inputs.password}</p>
       
 
     </div>
