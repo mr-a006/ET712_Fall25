@@ -10,5 +10,18 @@ setTimeout(()=>{
 
 console.log('------ Example 2: creating a simple module file -----')
 // const name = require("./mod.js")
-import helper from "./mod.js"
-console.log(helper("Peter"))
+import name from "./mod.js"
+console.log(name.helper("Peter"))
+console.log(name.id(12345))
+console.log(name.email("peter@neverland.edu"))
+
+console.log('------ Example 3: event emitter -----')
+// const events = require('events')
+import events from "events";
+let eventEmitter = new events.EventEmitter()
+
+eventEmitter.on('test', function(a){
+    console.log(a)
+})
+
+eventEmitter.emit('test', 'EVENTS IN NODEJS')
