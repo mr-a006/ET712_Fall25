@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="home">
-      <h1>Welcome to Aqeel Hussain's Computer Parts</h1>
+      <h1>Welcome to Aqeel Hussain's Computer Products</h1>
       <p>Explore our products by category:</p>
       <div className="category-links">
         <Link to="/category1">
