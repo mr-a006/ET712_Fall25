@@ -5,13 +5,13 @@ function Home() {
   return (
     <div className="home">
       <h1>Welcome to Aqeel Hussain's Computer Products</h1>
-      <p>Explore our products by category:</p>
+      <p>Explore our products by the following categories:</p>
       <div className="category-links">
         <Link to="/category1">
-          <button>Category 1</button>
+          <button>Computer Accessories</button>
         </Link>
         <Link to="/category2">
-          <button>Category 2</button>
+          <button>Computer Parts</button>
         </Link>
       </div>
     </div>

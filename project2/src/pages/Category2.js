@@ -15,7 +15,7 @@ function Category2({ addToCart }) {
 
   return (
     <div className="category-page">
-      <h2>Category 2</h2>
+      <h2>Computer Parts</h2>
       <div className="cards-container">
         {products.map((product) => (
           <Card key={product.id} product={product} addToCart={addToCart} />
